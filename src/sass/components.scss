@@ -678,10 +678,13 @@
         button{
           background: var(--color-pink);
           color: var(--color-pink);
-          width: 1.5rem;
-          height: 1.5rem;
-          border-radius: 1.5rem;
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 1.4rem;
           border: none;
+          font-size: 0!important;
+          line-height: 0!important;
+          padding: 0;
         }
       }
     }
