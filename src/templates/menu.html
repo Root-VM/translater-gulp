@@ -1,0 +1,39 @@
+<menu class="margin-element">
+    <li class="logo"><a href="#">TRANSLATEL</a></li>
+
+    <li><a href="#">Log in</a></li>
+    <li><a href="#">Sign up</a></li>
+
+    <li class="dropdown-wrap">
+        <button onclick="toggle()"></button>
+        <img src="./img/icons/globe.svg" alt="#">
+        <a href="#">en</a>
+
+        <div class="dropdownMenu">
+            <a href="./?lang=en">en</a>
+            <a href="./?lang=de">de</a>
+            <a href="./?lang=fr">fr</a>
+        </div>
+    </li>
+
+    <div class="burger" onclick="toggleMenu()">
+        <img src="/img/icons/menu.svg" alt="menu">
+    </div>
+</menu>
+
+<div class="mobile-menu mobile-only">
+    <img src="./img/icons/close.svg" alt="#" onclick="toggleMenu()">
+    <ul>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li class="mobileDrop" onclick="toggleMobile()">
+            <a href="#">English <img src="./img/icons/dropdown.svg" alt="#"></a>
+
+            <div class="list">
+                <a href="#" class="active">English</a>
+                <a href="#">Deutsch</a>
+                <a href="#">Spanish</a>
+            </div>
+        </li>
+    </ul>
+</div>

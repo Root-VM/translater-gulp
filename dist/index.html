@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Main page</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="preload" href="/css/libs.min.css" as="style" />
+<link rel="preload" href="/css/app.css" as="style" />
+<link rel="stylesheet" href="/css/libs.min.css" />
+<link rel="stylesheet" href="/css/app.css" />
+
+  </head>
+  <body>
+    <menu class="margin-element">
+    <li class="logo"><a href="#">TRANSLATEL</a></li>
+
+    <li><a href="#">Log in</a></li>
+    <li><a href="#">Sign up</a></li>
+
+    <li class="dropdown-wrap">
+        <button onclick="toggle()"></button>
+        <img src="./img/icons/globe.svg" alt="#">
+        <a href="#">en</a>
+
+        <div class="dropdownMenu">
+            <a href="./?lang=en">en</a>
+            <a href="./?lang=de">de</a>
+            <a href="./?lang=fr">fr</a>
+        </div>
+    </li>
+
+    <div class="burger" onclick="toggleMenu()">
+        <img src="/img/icons/menu.svg" alt="menu">
+    </div>
+</menu>
+
+<div class="mobile-menu mobile-only">
+    <img src="./img/icons/close.svg" alt="#" onclick="toggleMenu()">
+    <ul>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li class="mobileDrop" onclick="toggleMobile()">
+            <a href="#">English <img src="./img/icons/dropdown.svg" alt="#"></a>
+
+            <div class="list">
+                <a href="#" class="active">English</a>
+                <a href="#">Deutsch</a>
+                <a href="#">Spanish</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <section class="blue-box top-info">
+    <div class="margin-element content">
+        <div class="texts">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Bibendum mauris sem augue ullamcorper urna eu tellus amet, sed. Bibendum mauris sem augue ullamcorper urna eu tellus amet, sed. </p>
+            <button class="blue-button">Find the Interpreter</button>
+        </div>
+
+        <div class="images">
+            <div class="img">
+                <img src="img/man.png" alt="man">
+
+                <div class="circles"><div>Übersetzung</div></div>
+                <div class="circles"><div>interpreting</div></div>
+                <div class="circles"><div>通訳</div></div>
+
+                <div class="rows">
+                    <div class="box">
+                        <p class="date">
+                            <span>Apr</span>
+                            28
+                            <span>Wed</span>
+                        </p>
+                        <div class="data">
+                            <p>Albanian - German Interpreter  <span>10 : 15 AM</span></p>
+                            <p class="text">Meeting with the Swiss Central Hospital is planned for today.</p>
+                            <img src="img/icons/bell.svg" alt="bell">
+                        </div>
+                    </div>
+                    <div class="small-box">
+                        <p class="date">
+                            <span>Apr</span>
+                            28
+                            <span>Wed</span>
+                        </p>
+                        <div class="data">
+                            <p>Albanian - German Interpreter  <span>10 : 15 AM</span></p>
+                            <p class="text">Meeting with the Swiss Central Hospital is planned for today.</p>
+                            <img src="img/icons/bell.svg" alt="bell">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="benefits">
+    <h4>Our benefits</h4>
+
+    <div class="list margin-element">
+        <div>
+            <div class="icon">
+                <img src="img/icons/hands.png" alt="list-icon">
+            </div>
+            <p>Spoken or sign language</p>
+            <p class="text">
+                On out platform you can find professional  that are able to interpret both spoken and sign languages
+            </p>
+        </div>
+        <div>
+            <div class="icon">
+                <img src="img/icons/books.png" alt="list-icon">
+            </div>
+            <p>Book a meeting </p>
+            <p class="text">
+                We will automatically find our <br>
+                best matched interpreter<br>
+                from our certified network
+            </p>
+        </div>
+        <div>
+            <div class="icon">
+                <img src="img/icons/video.png" alt="list-icon">
+            </div>
+            <p>Online videosession</p>
+            <p class="text">
+                No need for a personally meeting.<br>
+                Reduce travel costs and<br>
+                CO2 emissions
+            </p>
+        </div>
+    </div>
+
+    <div class="list margin-element">
+        <div>
+            <div class="icon">
+                <img src="img/icons/seciruty.png" alt="list-icon">
+            </div>
+            <p>Don't care about security</p>
+            <p class="text">
+                Everything is hosted<br>
+                in Switzerland and<br>
+                the communication is encrypted
+            </p>
+        </div>
+        <div>
+            <div class="icon">
+                <img src="img/icons/settings.png" alt="list-icon">
+            </div>
+            <p>No administration & invoicing</p>
+            <p class="text">
+                Our platform does all the administrative <br>work for you. Search, book and pay <br>interpreters. Save your time
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="screens">
+    <div class="margin-element">
+        <div class="texts">
+            <h4>Easy handle your interpretion need </h4>
+            <p>With Translatel you will be able to add an interpreter in Minutes to your meeting. No travelcost, no long planing and searching. All at once, fully digital. </p>
+            <button class="blue-button">Start now</button>
+            <img src="img/mockups.png" alt="mockups" class="mobile-only">
+
+        </div>
+        <div class="images">
+            <img src="img/screens/1.png" alt="screen">
+            <img src="img/screens/2.jpg" alt="screen">
+            <img src="img/screens/3.png" alt="screen">
+            <img src="img/screens/3.png" alt="screen">
+        </div>
+    </div>
+</section>
+    <section class="slider">
+    <div id="slider-img" class="img"></div>
+    <div class="sl-wrap">
+        <div class="slider-wrap">
+            <div class="el">
+                <h4>How it works</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+                    <br><br>
+                    Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+                    <br><br>
+                    Pharetra vitae quam ut pulvinar magna iaculis ac egestas turpis. Viverra diam vitae a, pellentesque elit auctor molestie. Massa purus vitae adipiscing nulla pellentesque ipsum potenti ac, risus. </p>
+            </div>
+            <div class="el">
+                <h4>How it works</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+                    <br><br>
+                    Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+                    <br><br>
+                    Pharetra vitae quam ut pulvinar magna iaculis ac egestas turpis. Viverra diam vitae a, pellentesque elit auctor molestie. Massa purus vitae adipiscing nulla pellentesque ipsum potenti ac, risus. </p>
+            </div>
+            <div class="el">
+                <h4>How it works</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+                    <br><br>
+                    Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+                    <br><br>
+                    Pharetra vitae quam ut pulvinar magna iaculis ac egestas turpis. Viverra diam vitae a, pellentesque elit auctor molestie. Massa purus vitae adipiscing nulla pellentesque ipsum potenti ac, risus. </p>
+            </div>
+            <div class="el">
+                <h4>How it works</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+                    <br><br>
+                    Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+                    <br><br>
+                    Pharetra vitae quam ut pulvinar magna iaculis ac egestas turpis. Viverra diam vitae a, pellentesque elit auctor molestie. Massa purus vitae adipiscing nulla pellentesque ipsum potenti ac, risus. </p>
+            </div>
+            <div class="el">
+                <h4>How it works</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+                    <br><br>
+                    Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+                    <br><br>
+                    Pharetra vitae quam ut pulvinar magna iaculis ac egestas turpis. Viverra diam vitae a, pellentesque elit auctor molestie. Massa purus vitae adipiscing nulla pellentesque ipsum potenti ac, risus. </p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="about-us">
+    <div class="margin-element">
+        <div class="texts">
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+
+                Enim curabitur eu non diam tellus aliquet sem turpis lorem. Consequat, amet adipiscing orci eget ullamcorper gravida nec ut nisi. Duis sem vel scelerisque morbi enim id.
+
+                <span class="mobile-img mobile-only"></span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus fames praesent netus diam at. Adipiscing vitae enim sed interdum quis sapien ullamcorper non vitae. Est, vitae, tellus malesuada sit viverra mattis augue nunc.
+            </p>
+            <button class="blue-button">Get acquainted</button>
+        </div>
+
+        <div class="img"><div class="img-wrap"></div></div>
+    </div>
+</section>
+    <section class="partners">
+    <div class="list margin-element">
+        <div>
+            <div class="icon">
+                <img src="img/icons/people.svg" alt="list-icon">
+            </div>
+            <div>
+                <p>+200</p>
+                <p class="text">
+                    interpreters on our platfor ready to fullfill the interpretation
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="icon">
+                <img src="img/icons/camera-white.svg" alt="list-icon">
+            </div>
+            <div>
+                <p>24 450</p>
+                <p class="text">
+                    videosessions have already taken place on our platform
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="icon">
+                <img src="img/icons/message.svg" alt="list-icon">
+            </div>
+            <div>
+                <p>+50</p>
+                <p class="text">
+                    spoken languages or sign languages available for you
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="img/partners/1.png" alt="partner">
+        <img src="img/partners/2.png" alt="partner">
+        <img src="img/partners/3.png" alt="partner">
+        <img src="img/partners/4.png" alt="partner">
+        <img src="img/partners/1.png" alt="partner">
+        <img src="img/partners/5.png" alt="partner">
+        <img src="img/partners/3.png" alt="partner">
+    </div>
+</section>
+
+    <footer>
+    <div class="margin-element">
+        <h4 class="logo">TRANSLATEL</h4>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Legal notice</a></li>
+        </ul>
+    </div>
+
+    <p class="margin-element">All rights reserved</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script defer src="/js/libs.min.js"></script>
+<script defer src="/js/app.js"></script>
+
+  </body>
+</html>
