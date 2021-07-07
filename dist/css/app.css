@@ -989,12 +989,7 @@ footer {
           border: none;
           font-size: 0 !important;
           line-height: 0 !important;
-          padding: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translateX(-50%) translateY(-50%);
-                  transform: translateX(-50%) translateY(-50%); }
+          padding: 0; }
 
 html {
   font-size: 10px;
@@ -1366,10 +1361,11 @@ p {
                 transform: translateX(-50%); }
         .slider .slider-wrap .slick-dots li {
           height: 1.8rem;
-          width: 1.8rem; }
+          width: 1.8rem;
+          border-width: .1rem; }
           .slider .slider-wrap .slick-dots li:last-child {
             margin-right: 0; }
-          .slider .slider-wrap .slick-dots li.slick-active {
+          .slider .slider-wrap .slick-dots li.slick-active, .slider .slider-wrap .slick-dots li:hover {
             border-width: .1rem; }
           .slider .slider-wrap .slick-dots li button {
             height: 1.2rem;
