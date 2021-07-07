@@ -948,8 +948,8 @@ footer {
       padding: 0;
       margin: 0; }
       .slider .slider-wrap .slick-dots li {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
         border-radius: 2.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -964,7 +964,10 @@ footer {
         -webkit-transition: .3s;
         transition: .3s;
         border: .2rem solid white;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box; }
         .slider .slider-wrap .slick-dots li.slick-active {
           border: 0.2rem solid var(--color-pink); }
           .slider .slider-wrap .slick-dots li.slick-active button {
@@ -986,7 +989,12 @@ footer {
           border: none;
           font-size: 0 !important;
           line-height: 0 !important;
-          padding: 0; }
+          padding: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%); }
 
 html {
   font-size: 10px;
@@ -1348,35 +1356,37 @@ p {
       margin-right: 0; }
     .slider .sl-wrap {
       width: calc(100vw - 3.2rem); }
-    .slider .slider-wrap .slick-dots {
-      position: absolute;
-      bottom: 10rem;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-      .slider .slider-wrap .slick-dots li {
-        height: 1.8rem;
-        width: 1.8rem; }
-        .slider .slider-wrap .slick-dots li:last-child {
-          margin-right: 0; }
-        .slider .slider-wrap .slick-dots li.slick-active {
-          border-width: .1rem; }
-        .slider .slider-wrap .slick-dots li button {
-          height: 1.2rem;
-          width: 1.2rem;
-          border-radius: .8rem;
-          color: #e06abd00; }
-    .slider .slider-wrap .slick-arrow {
-      display: none !important; }
-    .slider .slider-wrap .el h4 {
-      font-size: 2.7rem;
-      line-height: 2.7rem;
-      margin-bottom: 2rem;
-      text-align: center; }
-    .slider .slider-wrap .el p {
-      font-size: 1.4rem;
-      line-height: 1.9rem;
-      margin-bottom: 3rem; }
+    .slider .slider-wrap {
+      margin: auto; }
+      .slider .slider-wrap .slick-dots {
+        position: absolute;
+        bottom: 10rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        .slider .slider-wrap .slick-dots li {
+          height: 1.8rem;
+          width: 1.8rem; }
+          .slider .slider-wrap .slick-dots li:last-child {
+            margin-right: 0; }
+          .slider .slider-wrap .slick-dots li.slick-active {
+            border-width: .1rem; }
+          .slider .slider-wrap .slick-dots li button {
+            height: 1.2rem;
+            width: 1.2rem;
+            border-radius: .8rem;
+            color: #e06abd00; }
+      .slider .slider-wrap .slick-arrow {
+        display: none !important; }
+      .slider .slider-wrap .el h4 {
+        font-size: 2.7rem;
+        line-height: 2.7rem;
+        margin-bottom: 2rem;
+        text-align: center; }
+      .slider .slider-wrap .el p {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        margin-bottom: 3rem; }
   .about-us .margin-element {
     display: -webkit-box;
     display: -ms-flexbox;

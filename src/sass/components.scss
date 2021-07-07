@@ -651,8 +651,8 @@
       padding: 0;
       margin: 0;
       li{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
         border-radius: 2.5rem;
         display: flex;
         align-items: center;
@@ -661,6 +661,8 @@
         transition: .3s;
         border: .2rem solid white;
         cursor: pointer;
+        position: relative;
+        box-sizing: content-box;
         &.slick-active{
           border: .2rem solid var(--color-pink);
           button{
@@ -685,6 +687,10 @@
           font-size: 0!important;
           line-height: 0!important;
           padding: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
         }
       }
     }
