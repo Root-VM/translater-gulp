@@ -1343,6 +1343,8 @@ p {
     .slider #slider-img {
       min-height: 37.1rem;
       margin-right: 0; }
+    .slider .sl-wrap {
+      width: calc(100vw - 3.2rem); }
     .slider .slider-wrap .slick-dots {
       position: absolute;
       bottom: 10rem;
