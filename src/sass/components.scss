@@ -21,10 +21,12 @@
         font-family: var(--font-OpenSans);
         font-style: normal;
         font-weight: normal;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
         color: var(--color-white);
         margin-bottom: 5rem;
+        width: 100%;
+        max-width: 44.9rem;
       }
     }
     .images{
@@ -340,7 +342,7 @@
         font-size: 2.6rem;
         line-height: 2.6rem;
         text-align: center;
-        color: var(--color-grey);
+        color: #373D3E;
         margin-bottom: 2.2rem;
         white-space: nowrap;
       }
@@ -359,11 +361,11 @@
 .screens{
   padding: 35.5rem 0;
   margin-bottom: 29.4rem;
-  background: radial-gradient(100.3% 307.49% at 18.49% 9%, #54C9E2 0%, rgba(84, 201, 226, 0.9) 19.63%, rgba(100, 206, 228, 0.9) 35.33%, rgba(108, 212, 234, 0.731168) 57.97%, rgba(100, 206, 228, 0.5) 79.69%, rgba(100, 206, 228, 0.4) 98.02%);
+  background: radial-gradient(100.3% 307.49% at 18.49% 9%, #24B7D8 0%, #2FBEDD 19.63%, rgba(43, 192, 224, 0.9) 35.33%, rgba(69, 193, 219, 0.85) 57.97%, rgba(88, 201, 225, 0.8) 79.69%, rgba(117, 210, 230, 0.8) 98.02%);
   >div{
     display: flex;
     .texts{
-      max-width: 41.1rem;
+      max-width: 48.1rem;
       margin-right: 5.9rem;
       h4{
         font-family: var(--font-Josefin);
@@ -377,9 +379,9 @@
       p{
         font-family: var(--font-OpenSans);
         font-style: normal;
-        font-weight: normal;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
         color: var(--color-white);
         margin-bottom: 6rem;
       }
@@ -417,7 +419,7 @@
 
 .about-us{
   display: flex;
-  background: radial-gradient(291.39% 644.37% at -22.83% -80.06%, #54C9E2 0%, rgba(84, 201, 226, 0.9) 19.63%, rgba(100, 206, 228, 0.9) 35.33%, rgba(108, 212, 234, 0.731168) 57.97%, rgba(100, 206, 228, 0.5) 79.69%, rgba(100, 206, 228, 0.4) 98.02%);
+  background: radial-gradient(100.3% 307.49% at 18.49% 9%, #24B7D8 0%, #2FBEDD 19.63%, rgba(43, 192, 224, 0.9) 35.33%, rgba(69, 193, 219, 0.85) 57.97%, rgba(88, 201, 225, 0.8) 79.69%, rgba(117, 210, 230, 0.8) 98.02%);
 
   >div{
     display: flex;
@@ -440,8 +442,8 @@
       font-family: var(--font-OpenSans);
       font-style: normal;
       font-weight: normal;
-      font-size: 1.6rem;
-      line-height: 2.2rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
       color: var(--color-white);
       margin-bottom: 6rem;
     }
@@ -521,17 +523,17 @@
         font-family: var(--font-Josefin);
         font-style: normal;
         font-weight: 600;
-        font-size: 2.6rem;
-        line-height: 2.6rem;
-        color: var(--color-grey);
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: #373D3E;
         margin-bottom: 1.6rem;
         white-space: nowrap;
       }
       .text{
         transition: .3s;
         white-space: normal;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
         margin-bottom: 0;
         font-weight: normal;
       }
@@ -594,8 +596,8 @@
         font-family: var(--font-OpenSans);
         font-style: normal;
         font-weight: normal;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
         color: var(--color-black);
         margin-bottom: 4.5rem;
       }
@@ -651,46 +653,42 @@
       padding: 0;
       margin: 0;
       li{
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 2.5rem;
+        width: 26px;
+        height: 26px;
+        border-radius: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 3rem;
         transition: .3s;
-        border: .2rem solid white;
+        border: 2px solid white;
         cursor: pointer;
         position: relative;
-        box-sizing: content-box;
-        &.slick-active{
-          border: .2rem solid var(--color-pink);
-          button{
-            box-shadow: 0 0 1.11rem .9rem #e06abd42;
-          }
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          width: 100%;
+          height: 100%;
+          background-image: url("../img/icons/d.svg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
         }
-        &:hover{
-          border: .2rem solid var(--color-pink);
-          transition: .3s;
-          button{
-            box-shadow: 0 0 1.11rem .9rem #e06abd42;
+        &.slick-active, &:hover{
+          &:before{
+            background-image: url("../img/icons/active-d.svg");
+            background-size: calc(100% + 26px);
+            border-radius: 30px;
+            box-shadow: 0 0 0.7rem 0.9rem #e06abd26;
           }
         }
 
         button{
-          background: var(--color-pink);
-          color: var(--color-pink);
-          width: 1.4rem;
-          height: 1.4rem;
-          border-radius: 1.4rem;
-          border: none;
-          font-size: 0!important;
-          line-height: 0!important;
-          padding: 0;
-          //position: absolute;
-          //top: 50%;
-          //left: 50%;
-          //transform: translateX(-50%) translateY(-50%);
+          display: none;
         }
       }
     }

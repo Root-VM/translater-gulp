@@ -33,11 +33,11 @@ button:focus {outline:0;}
   font-family: var(--font-OpenSans);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   color: var(--color-white);
-  background: linear-gradient(94.87deg, #51BCD3 -67.1%, #61CDE4 -5.68%, #6ED0E5 23.37%, #70D5EB 58.7%, #70D4EA 117.26%, #75D3E7 404.06%);
-  box-shadow: -1rem -1rem 5.6rem rgba(199, 245, 255, 0.8), 1rem 1rem 2.8rem #42ABC1;
+  box-shadow: -2rem -1rem 3.5rem rgba(199, 245, 255, 0.34), 1rem 1rem 2.8rem #42abc1;
+  background: radial-gradient(226.66% 607.25% at -13.33% -49.11%, #2EBDDD 0%, #55DEFC 19.63%, #23CEF2 35.33%, #5EE2FF 57.97%, #43CEEC 79.69%, #5AE1FE 98.02%);
   border-radius: 500px;
   min-height: 5.6rem;
   border: none;
@@ -75,7 +75,7 @@ p{
 }
 
 .blue-box{
-  background: radial-gradient(86.98% 320.64% at 18.59% 15.1%, #54C9E2 0%, rgba(84, 201, 226, 0.9) 19.63%, rgba(100, 206, 228, 0.9) 35.33%, rgba(108, 212, 234, 0.731168) 57.97%, rgba(100, 206, 228, 0.5) 79.69%, rgba(100, 206, 228, 0.4) 98.02%);
+  background: radial-gradient(100.3% 307.49% at 18.49% 9%, #24B7D8 0%, #2FBEDD 19.63%, rgba(43, 192, 224, 0.9) 35.33%, rgba(69, 193, 219, 0.85) 57.97%, rgba(88, 201, 225, 0.8) 79.69%, rgba(117, 210, 230, 0.8) 98.02%);
   min-height: 100rem;
   width: 100%;
   display: flex;

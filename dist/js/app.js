@@ -22,14 +22,21 @@ $jq(document).ready(function () {
   if (lng) {
     $('.dropdown-wrap > a').html(lng);
   } else {
-    $('.dropdown-wrap > a').html('en');
-    lng = 'en';
+    $('.dropdown-wrap > a').html('En');
+    lng = 'En';
   }
 
   $('.dropdownMenu >a').each(function (index) {
     var condition = $(this).text() === lng;
     condition ? $(this).addClass('active') : $(this).removeClass('active');
   });
+  var dotNums = document.querySelectorAll(".slick-dots button");
+
+  function removeText(item) {
+    item.innerHTML = ''; // or put the text you need inside quotes
+  }
+
+  dotNums.forEach(removeText);
 }); // lng dropdown
 
 function toggle() {

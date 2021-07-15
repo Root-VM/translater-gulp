@@ -6,6 +6,16 @@
 @media screen and (max-width: 1600px) {
   html{
     font-size: 9px;
+
+    .slider .slider-wrap .slick-dots li{
+      width: 20px;
+      height: 20px;
+      &.slick-active, &:hover{
+        &:before{
+          background-size: calc(100% + 18px);
+        }
+      }
+    }
   }
 }
 
@@ -46,8 +56,7 @@
     margin-right: 1.6rem;
   }
   .screens, .about-us, .top-info{
-    background: radial-gradient(234.88% 694.59% at -38.44% -40.76%, #54C9E2 0%, rgba(84, 201, 226, 0.9) 19.63%, rgba(100, 206, 228, 0.9) 35.33%, rgba(108, 212, 234, 0.731168) 57.97%, rgba(100, 206, 228, 0.5) 79.69%, rgba(100, 206, 228, 0.4) 98.02%);
-  }
+    background: radial-gradient(125.73% 378.01% at 18.49% 9%, #24B7D8 0%, #2FBEDD 19.63%, rgba(43, 192, 224, 0.9) 35.33%, rgba(69, 193, 219, 0.85) 57.97%, rgba(88, 201, 225, 0.8) 79.69%, rgba(117, 210, 230, 0.8) 98.02%);  }
 
   .blue-button{
     font-size: 1.2rem;
@@ -159,9 +168,9 @@
           max-width: 28.4rem;
         }
         p{
-          font-size: 1.2rem;
-          line-height: 1.6rem;
-          margin-bottom: 2rem;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+          margin-bottom: 3rem;
           max-width: 24.1rem;
         }
       }
@@ -272,7 +281,7 @@
           font-size: 1.4rem;
           line-height: 1.9rem;
           margin-bottom: 2rem;
-          font-weight: 300;
+          font-weight: 400;
         }
         button{
           display: none;
@@ -298,29 +307,28 @@
       margin-right: 0;
     }
     .sl-wrap{
-      width: calc(100vw - 3.2rem);
+      width: 100%;
     }
     .slider-wrap {
-      margin: auto;
+
       .slick-dots{
         position: absolute;
         bottom: 10rem;
         left: 50%;
         transform: translateX(-50%);
         li{
-          height: 1.8rem;
-          width: 1.8rem;
-          border-width: .1rem;
+          height: 18px;
+          width: 18px;
           &:last-child{
             margin-right: 0;
           }
-          &.slick-active, &:hover{
+          &.slick-active{
             border-width: .1rem;
           }
           button{
-            height: 1.2rem;
-            width: 1.2rem;
-            border-radius: .8rem;
+            height: 12px;
+            width: 12px;
+            border-radius: 12px;
             color: #e06abd00;
           }
         }
@@ -340,6 +348,16 @@
           font-size: 1.4rem;
           line-height: 1.9rem;
           margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .slider .slider-wrap .slick-dots li{
+      width: 16px;
+      height: 16px;
+      &.slick-active, &:hover{
+        &:before{
+          background-size: calc(100% + 12px);
         }
       }
     }
